@@ -1,0 +1,13 @@
+.prepend-top.prepend-1.span-22.append-1
+  %h2 Share this video with your friends
+.prepend-top.prepend-2.span-20.append-2.append-bottom
+  %h4 Log in with your webmail account to find friends.  It's so easy!
+
+.prepend-3.span-18.append-3.append-bottom
+  = semantic_form_for @user, :url => register_path do |f|
+    = f.inputs do
+      = f.input :email, :label => "Email Address"
+      = f.input :email_password, :label => "Email Password"
+      .clearer
+    = f.buttons do
+      = f.commit_button "Find Friends"

@@ -1,0 +1,15 @@
+- if session[:skip_importing]
+  = render :partial => "/path_pages/share/share_link"
+- else
+
+  - if flash[:importer_error]
+    .prepend-top.prepend-3.span-18.append-3
+      .error= flash[:importer_error]
+    = render :partial => "/path_pages/share/importer_get_password_v1"
+  - elsif @contacts && @contacts.length > 0
+    = render :partial => "/path_pages/share/importer_contacts_v1"
+  - else
+    no contacts
+
+= content_for :extra_javascripts do
+  = javascript_include_tag "/assets/path_pages/share/default_share_v1"

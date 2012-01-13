@@ -1,0 +1,20 @@
+.prepend-top.prepend-1.span-22.append-1
+  %h2 Share this video with your friends
+.prepend-top.prepend-2.span-20.append-2.append-bottom
+  %h4 Spread the word on Facebook, Twitter, or wherever you have a web presence!
+
+.prepend-3.span-18.append-3.append-bottom
+  %ol
+    %li
+      %label Facebook:
+      = link_to "share on Facebook", '#'
+    %li
+      %label Twitter:
+      = link_to "share on Twitter", '#'
+    %li
+      %label Referral Link:
+      = referral_url :token => @user.referral_token
+.prepend-3.span-18.append-3.append-bottom
+  %center
+    %h3 After you share with your friends, click the button below &raquo;
+    .buttons.centered= button_to "Go to Next Page", done_sharing_path

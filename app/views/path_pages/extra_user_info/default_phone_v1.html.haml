@@ -1,0 +1,12 @@
+.prepend-top.prepend-1.span-22.append-1
+  %h2 Receive Important Updates by SMS
+.prepend-top.prepend-2.span-20.append-2.append-bottom
+  %h4 Enter your phone number and we'll send you updates letting you know what you can do to help get Ron Paul elected!
+
+.prepend-3.span-18.append-3.append-bottom
+  = semantic_form_for @user, :url => extra_info_path do |f|
+    = f.inputs do
+      = f.input :phone, :label => "Phone Number"
+      .clearer
+    = f.buttons do
+      = f.commit_button "Save Phone Number"

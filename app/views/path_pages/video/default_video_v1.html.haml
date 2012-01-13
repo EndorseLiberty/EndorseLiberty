@@ -1,0 +1,16 @@
+.prepend-top.span-24.append-bottom
+  %center
+    %h1 Check out this video and vote for Ron Paul!
+
+- if @referrer
+  .prepend-top.span-24.append-bottom
+    %center
+      %h3= "Your friend wanted you to watch this!"
+
+.prepend-top.span-24.append-bottom
+  %center
+    %iframe{:width => 560, :height => 315, :frameborder => 0, :src => "http://www.youtube.com/embed/92OV3RbU3ek"}
+
+.prepend-top.span-24.append-bottom
+  %center
+    = link_to "Click here when you're done watching the video", watched_path

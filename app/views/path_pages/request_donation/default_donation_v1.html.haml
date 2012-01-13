@@ -1,0 +1,76 @@
+.prepend-top.prepend-1.span-22.append-1.append-bottom
+  %h2 Donate
+.prepend-top.prepend-2.span-20.append-2.append-bottom
+  %h4 Help us get Ron Paul elected!
+
+
+.prepend-3.span-18.append-3.append-bottom
+  = form_tag "https://www.paypal.com/cgi-bin/webscr" do
+    %fieldset.inputs
+      %legend Contributor
+      %li
+        %label.label First Name
+        = text_field_tag "first_name"
+      %li
+        %label.label Last Name
+        = text_field_tag "last_name"
+      %li
+        %label.label Address
+        = text_field_tag "address1"
+      %li
+        %label.label City
+        = text_field_tag "city"
+      %li
+        %label.label State
+        = text_field_tag "state"
+      %li
+        %label.label Zip
+        = text_field_tag "zip"
+      %li
+        %label.label Email
+        = text_field_tag "email"
+      %li
+        %label.label Phone
+        = text_field_tag "os2"
+
+    %fieldset.inputs
+      %legend Select Amount
+      %li
+        %label.label Amount
+        = select_tag "amount", options_for_select([["$50", 50.00], ["$100", 100.00], ["$250", 250.00], ["$500", 500.00], ["$1,000", 1000.00], ["$5,000", 5000.00], ["$10,000", 10000.00]])
+
+    %fieldset.inputs
+      %legend Information Required by Federal/State Law
+      = hidden_field_tag "on0", "Employer"
+      = hidden_field_tag "on1", "Occupation"
+      %li
+        %label.label Employer
+        = text_field_tag "on0"
+      %li
+        %label.label Occupation
+        = text_field_tag "on1"
+
+    %fieldset.inputs
+      %legend Disclaimer
+      %p The Federal Election Commission requires that all of these statements are true for anyone contributing to the campaign:
+      %ul
+        %li I am a US Citizen or Permanent Resident
+        %li I am donating my own money
+        %li I am not under contract to the Federal Government
+        %li I am not making this contribution in the name of another person
+        %li I am 18 years of age or older
+      .clear
+      %p If there is an occupation/employer: Federal law requires political committees to use their best efforts to obtain and report the name, mailing address, occupation, and employer for each individual whose contributions aggregate in excess of $200 in an election cycle.
+      %p Contributions to Endorse Liberty are not deductible as charitable donations for federal income tax purposes.  Cash contributions cannot be accepted.  Contributions from foreign nationals are prohibited.
+
+    %fieldset.buttons
+      = hidden_field_tag "cmd", "_donations"
+      = hidden_field_tag "business", "ads@endorseliberty.com"
+      = hidden_field_tag "item_name", "Endorse Liberty"
+      = hidden_field_tag "currency_code", "USD"
+      = hidden_field_tag "no_shipping", "2"
+      = hidden_field_tag "no_note", "1"
+      = hidden_field_tag "address_override", "1"
+      = hidden_field_tag "bn", "Donate"
+
+      = submit_tag "DONATE"
