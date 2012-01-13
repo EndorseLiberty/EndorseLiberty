@@ -1,3 +1,5 @@
+AdminUser.create :first_name => "Jonathan", :last_name => "Geggatt", :password => "bajohngo", :password_confirmation => "bajohngo", :email => "jgeggatt@gmail.com", :role => 100
+
 # Create a default landing path for each traffic group
 [:walkup, :affiliate, :viral].each do |traffic_group|
   experiment = Experiment.create :conversion_event => :register, :traffic_group => traffic_group, :name => "default_#{traffic_group}_v1"
@@ -16,9 +18,9 @@ InviteSubject.create :name => "default_subject_v1", :subject => "An invitation f
 InviteFromLine.create :name => "default_from_v1", :from => "*inviter_full_name* <*inviter_email*>"
 
 # Default Invite Reminder pieces
-InviteTemplate.create :name => "default_invite_v1", :reminder => true
-InviteSubject.create :name => "default_subject_v1", :subject => "An invitation from *inviter_full_name*...", :reminder => true
-InviteFromLine.create :name => "default_from_v1", :from => "*inviter_full_name* <*inviter_email*>", :reminder => true
+InviteTemplate.create :name => "reminder_invite_v1", :reminder => true
+InviteSubject.create :name => "reminder_subject_v1", :subject => "An invitation from *inviter_full_name*...", :reminder => true
+InviteFromLine.create :name => "reminder_from_v1", :from => "*inviter_full_name* <*inviter_email*>", :reminder => true
 
 # Default :register email
 EmailTemplate.create :name => "default_register_v1", :email_type => :register
