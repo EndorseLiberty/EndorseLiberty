@@ -1,5 +1,6 @@
-PATH
-  remote: ../seed_blocks
+GIT
+  remote: git@github.com:jgeggatt/SeedBlocks.git
+  revision: acdc49fa0346b8fc4fdd9c82533ebff087e65a17
   specs:
     seed_blocks (0.0.1)
       bson_ext
@@ -150,10 +151,10 @@ GEM
       polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.31)
-    uglifier (1.2.1)
+    uglifier (1.2.2)
       execjs (>= 0.3.0)
       multi_json (>= 1.0.2)
-    valium (0.4.0)
+    valium (0.5.0)
       activerecord (>= 3.0.2)
     will_paginate (3.0.2)
 
