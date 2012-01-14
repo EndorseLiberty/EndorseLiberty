@@ -6,6 +6,14 @@ test:
   host: localhost
   database: ron_paul_test
 
+staging:
+  host: staff.mongohq.com
+  port: 10003
+  username: seedblocks
+  password: 533dbl0ck5
+  database: endorse_liberty_stg
+
+
 # set these environment variables on your prod server
 production:
   host: <%= ENV['MONGOID_HOST'] %>
