@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 #gem 'seed_blocks', :path => '../seed_blocks'
-#gem 'seed_blocks', :git => "git@github.com:jgeggatt/SeedBlocks.git"
+gem 'seed_blocks', :git => "git@github.com:jgeggatt/SeedBlocks.git"
 
 gem 'jquery-rails'
 group :assets do
@@ -10,7 +10,3 @@ group :assets do
   gem 'coffee-rails', "~> 3.1.0"
   gem 'uglifier'
 end
-
-#group :production do
-#  gem 'seed_blocks', :git => "" # TODO
-#end
