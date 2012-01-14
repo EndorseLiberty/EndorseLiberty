@@ -9,7 +9,7 @@ test:
 staging:
   host: staff.mongohq.com
   port: 10003
-  username: seedblocks
+  username: seed_blocks
   password: 533dbl0ck5
   database: endorse_liberty_stg
 
