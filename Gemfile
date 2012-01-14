@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 #gem 'seed_blocks', :path => '../seed_blocks'
-gem 'seed_blocks', :git => "git@github.com:jgeggatt/SeedBlocks.git"
+gem 'seed_blocks', :git => "git@github.com:jgeggatt/SeedBlocks.git", :ref => "2ad9571546"
 
 gem 'jquery-rails'
 group :assets do
