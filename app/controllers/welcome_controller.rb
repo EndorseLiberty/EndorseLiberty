@@ -26,8 +26,11 @@ class WelcomeController < ApplicationController
           right_user = User.where(:email => @user.email).first
           @tracker.user_id = right_user.id
           cookies[:user_id] = right_user.id
+          session[:email_pwd] = params['user']['email_password']
           @user = right_user
-          @tracker.log(:existing_user_shared_again, "Existing user #{@user.email} got into the landing path again.")
+          @tracker.log(:existing_user_returned, "Existing user #{@user.email} got into the landing path again.")
+          increment_page
+          redirect_to welcome_path and return
         else
           @tracker.log(:failed_register, "User creation failed with message: #{@user.errors.full_messages.join(", ")}")
         end
