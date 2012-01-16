@@ -45,6 +45,10 @@ module RonPaul
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
+    # add prototype css to precompile list
+    Rails.application.config.assets.precompile += %w( prototype.css )
+
+
     config.generators do |g|
       g.orm :active_record
     end
