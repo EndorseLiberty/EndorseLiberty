@@ -1,4 +1,7 @@
 require 'html5-boilerplate'
+
 project_type = :rails
-http_path = "/"
 preferred_syntax = :sass
+sass_dir = "app/assets/stylesheets"
+css_dir = "app/assets/stylesheets/compiled"
+images_dir = "app/assets/images"

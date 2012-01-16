@@ -1,12 +1,11 @@
 GIT
   remote: git@github.com:jgeggatt/SeedBlocks.git
-  revision: 46defcc02ea42c97209237d85b87bf9d1f22567b
+  revision: 82ec099d78a018492b79a3428793eafcef0f95fb
+  ref: 82ec099d78
   specs:
     seed_blocks (0.0.1)
       bson_ext
       carrierwave
-      coffee-rails (~> 3.1.0)
-      compass (>= 0.12.alpha.3)
       date_validator
       fog
       formtastic
@@ -17,7 +16,6 @@ GIT
       mysql2 (~> 0.3.6)
       rails (~> 3.1.0)
       rmagick (~> 2.12.2)
-      sass-rails (~> 3.1.0)
       uglifier
       valium (>= 0.4.0)
       will_paginate (~> 3.0)
