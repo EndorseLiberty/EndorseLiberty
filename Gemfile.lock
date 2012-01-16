@@ -73,7 +73,7 @@ GEM
     date_validator (0.6.2)
       activemodel (>= 3.0.0, < 3.2.0)
     erubis (2.7.0)
-    excon (0.9.4)
+    excon (0.9.5)
     execjs (1.2.13)
       multi_json (~> 1.0)
     fog (1.1.2)
