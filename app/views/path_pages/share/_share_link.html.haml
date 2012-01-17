@@ -7,12 +7,16 @@
   %ol
     %li
       %label Facebook:
-      = link_to "share on Facebook", '#'
+      =# link_to "share on Facebook", '#'
+      = render :partial => "partials/fb_like_button"
     %li
       %label Twitter:
-      = link_to "share on Twitter", '#'
+      =# link_to "share on Twitter", '#'
+      %br
+      = render :partial => "partials/tweet_button"
     %li
       %label Referral Link:
+      %br
       = referral_url :token => @user.referral_token
 .prepend-3.span-18.append-3.append-bottom
   %center
