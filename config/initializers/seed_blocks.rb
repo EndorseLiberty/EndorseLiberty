@@ -1,6 +1,6 @@
 host = case Rails.env
          when "production" then "endorseliberty.com"
-         when "staging" then "endorselibertystg.com"
+         when "staging" then "elstg.com"
          else "ronpaul.local:3000"
        end
 
