@@ -7,7 +7,6 @@ host = case Rails.env
 # SeedBlocks config
 SEED_BLOCKS_ENGINE_CONFIG = {
     :app_name             => "Endorse Liberty",
-    :github_app_name      => "EndorseLiberty",
     :user_validations     => [],
     :fb_app_id            => "103033659819435",
     :fb_app_secret        => "381f3a80f1f399f4121f532ec516de6e",
