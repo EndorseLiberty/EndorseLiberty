@@ -11,5 +11,7 @@ SEED_BLOCKS_ENGINE_CONFIG = {
     :fb_app_id            => "103033659819435",
     :fb_app_secret        => "381f3a80f1f399f4121f532ec516de6e",
     :default_from_address => "contact@endorseliberty.com",
-    :host                 => host
+    :host                 => host,
+    :http_basic_id        => "liberty",
+    :http_basic_pass      => "3nd0r53"
 }
