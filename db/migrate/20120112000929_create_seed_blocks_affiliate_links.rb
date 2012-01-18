@@ -1,6 +1,7 @@
 class CreateSeedBlocksAffiliateLinks < ActiveRecord::Migration
   def change
     create_table :affiliate_links do |t|
+      t.integer :affiliate_id
       t.string :url_token
       t.string :subid_param_name
       t.float :signup_payout, :default => 0.0

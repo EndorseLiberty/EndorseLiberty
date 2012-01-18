@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(:version => 20120112000937) do
   end
 
   create_table "affiliate_links", :force => true do |t|
+    t.integer  "affiliate_id"
     t.string   "url_token"
     t.string   "subid_param_name"
     t.float    "signup_payout",    :default => 0.0

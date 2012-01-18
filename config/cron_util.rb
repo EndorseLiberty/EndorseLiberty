@@ -7,6 +7,6 @@ every 5.minutes do
   lockrun_scheduled_task "send_queued_invites"
 end
 
-#every :day, :at => '8am' do
-#  lockrun_scheduled_task "send_invite_reminders"
-#end
+every :day, :at => '8am' do
+  lockrun_scheduled_task "send_invite_reminders"
+end
