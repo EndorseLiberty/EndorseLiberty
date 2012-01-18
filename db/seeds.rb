@@ -1,7 +1,7 @@
 AdminUser.create :first_name => "Jonathan", :last_name => "Geggatt", :password => "bajohngo", :password_confirmation => "bajohngo", :email => "jgeggatt@gmail.com", :role => 100
 
 # Create a default landing path for each traffic group
-[:walkup, :affiliate, :viral].each do |traffic_group|
+[:organic, :affiliate, :viral].each do |traffic_group|
   experiment = Experiment.create :conversion_event => :register, :traffic_group => traffic_group, :name => "default_#{traffic_group}_v1"
   PathFlow.create :experiment => experiment, :flow => [:video, :register, :share, :extra_user_info, :request_donation]
   PathPage.create :page_type => :video, :name => "default_video_v1", :experiment => experiment, :layout => "rp_layout"
