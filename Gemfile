@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 #gem 'seed_blocks', :path => '../../seed_blocks'
-gem 'seed_blocks', :git => "git@github.com:jgeggatt/SeedBlocks.git", :ref => "aada214d05"
+gem 'seed_blocks', :git => "git@github.com:jgeggatt/SeedBlocks.git", :ref => "b45f50e54e"
 
 gem "compass", ">= 0.12.alpha.3"
 gem 'jquery-rails'
