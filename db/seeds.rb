@@ -2,7 +2,12 @@ AdminUser.create :first_name => "Jonathan", :last_name => "Geggatt", :password =
 
 # Create a default landing path for each traffic group
 [:organic, :affiliate, :viral].each do |traffic_group|
-  experiment = Experiment.create :conversion_event => :register, :traffic_group => traffic_group, :name => "default_#{traffic_group}_v1"
+  experiment = Experiment.create({
+    :conversion_event => "register",
+    :traffic_group => traffic_group,
+    :name => "default_#{traffic_group}_v1",
+    :delivery_url => "https://www.paypal.com/cgi-bin/webscr"
+  })
   PathFlow.create :experiment => experiment, :flow => [:video, :register, :share, :extra_user_info, :request_donation]
   PathPage.create :page_type => :video, :name => "default_video_v1", :experiment => experiment, :layout => "rp_layout"
   PathPage.create :page_type => :register, :name => "default_reg_v1", :experiment => experiment, :layout => "rp_layout"
