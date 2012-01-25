@@ -7,7 +7,6 @@ gem "compass", ">= 0.12.alpha.3"
 gem 'jquery-rails'
 gem 'sendgrid'
 gem 'imgkit'
-gem 'rest-client'
 
 group :assets do
   gem 'sass-rails', "~> 3.1.0"

@@ -156,8 +156,6 @@ GEM
     rdoc (3.12)
       json (~> 1.4)
     responders (0.6.5)
-    rest-client (1.6.7)
-      mime-types (>= 1.16)
     rmagick (2.12.2)
     ruby-hmac (0.4.0)
     sass (3.1.12)
@@ -197,7 +195,6 @@ DEPENDENCIES
   compass (>= 0.12.alpha.3)
   imgkit
   jquery-rails
-  rest-client
   sass-rails (~> 3.1.0)
   seed_blocks!
   sendgrid
