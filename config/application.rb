@@ -48,6 +48,8 @@ module RonPaul
     # add prototype css to precompile list
     config.assets.precompile << /(^[^_]|\/[^_])[^\/]*/
     config.assets.precompile += %w( prototype.css )
+    config.sass.load_paths << "#{Gem.loaded_specs['formtastic'].full_gem_path}/app/assets/stylesheets/"
+puts "***** #{config.sass.load_paths.inspect}"
 
     config.generators do |g|
       g.orm :active_record
