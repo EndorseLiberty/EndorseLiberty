@@ -46,7 +46,8 @@ module RonPaul
     config.assets.version = '1.0'
 
     # add prototype css to precompile list
-    Rails.application.config.assets.precompile += %w( prototype.css )
+    config.assets.precompile << /(^[^_]|\/[^_])[^\/]*/
+    config.assets.precompile += %w( prototype.css )
 
     config.generators do |g|
       g.orm :active_record
