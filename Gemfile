@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 #gem 'seed_blocks', :path => '../../seed_blocks'
-gem 'seed_blocks', :git => "git@github.com:jgeggatt/SeedBlocks.git", :ref => "e8a23e9da0"
+gem 'seed_blocks', :git => "git@github.com:jgeggatt/SeedBlocks.git", :ref => "dfc0076e30"
 
 gem 'jquery-rails'
 gem 'sendgrid'
