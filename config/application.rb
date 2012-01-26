@@ -46,7 +46,7 @@ module RonPaul
     config.assets.version = '1.0'
 
     # add prototype css to precompile list
-    #config.assets.precompile << /(^[^_]|\/[^_])[^\/]*/
+    config.assets.precompile << /(^[^_]|\/[^_])[^\/]*/
     config.assets.precompile += %w( prototype.css )
 
     config.generators do |g|
