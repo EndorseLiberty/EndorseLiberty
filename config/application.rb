@@ -48,7 +48,6 @@ module RonPaul
     # add prototype css to precompile list
     Rails.application.config.assets.precompile += %w( prototype.css )
 
-
     config.generators do |g|
       g.orm :active_record
     end
